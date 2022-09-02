@@ -37,4 +37,27 @@ public class Login {
 
         return false;
     }
+     @PostMapping(value = "/addUser")
+    public List<User> postMethodName(@RequestBody User user){
+        if (!user.getFullname().isEmpty() && !user.getUsername().isEmpty()&&!user.getPassword().isEmpty()){
+            User userNew= new User();
+            userNew.setFullname(user.getFullname());
+            userNew.setUsername(user.getUsername());
+            userNew.setPassword(user.getPassword());
+            repoUser.save(userNew);
+        }
+        List<User> listUserNews = repoUser.findAll();
+        return listUserNews;
+    }
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<String> postMethodName(@PathVariable Long id){
+       Optional<User> us = repoUser.findById(id);
+
+       if(us.isEmpty() == true){
+        return ResponseEntity.ok("delete false");
+       }
+       repoUser.deleteById(id);
+       return ResponseEntity.ok(" Delete success");
+    }
 }
