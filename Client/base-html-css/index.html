@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo2.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500&family=Josefin+Sans:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Shop-Do-Cong-Nghe</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header grid wide">
+            <div class="header__nav row">
+                <div class="header__nav-left l-8 m-9 c-8">
+                    <ul class="header__left-list">
+                        <li class="header__left-item header__nav-language">
+                            <img src="" alt="" class="header__nav-language-img">
+                            <img src="./assets/img/header/language/vietnam.jpg" class="header__nav-language-img" alt="">
+                            <a class="header__left-item-link" href="#">Việt Nam
+                                <!--<i class="header__icon-dow fa-solid fa-chevron-down"></i> -->
+                                <ul class="header__language-list">
+                                    <li class="header__language-list-item">
+                                        <a class="header__language-list-item-link" href="#">
+                                            <img src="./assets/img/header/language/en.jpg" class="header__language-list-item-img" alt="">
+                                            <span>English</span>    
+                                        </a>
+                                    </li>
+                                    <li class="header__language-list-item">
+                                        <a class="header__language-list-item-link" href="#">
+                                            <img src="./assets/img/header/language/it.jpg" class="header__language-list-item-img" alt="">
+                                            <span>Italia</span> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                            
+                        </li>
+                        <li class="header__left-item header__nav-price">
+                            <i class="fa-solid fa-star"></i>
+                            <a class="header__left-item-link" href="#">VND
+                            <i class="header__icon-dow fa-solid fa-chevron-down"></i>
+                            <ul class="header__price-list">
+                                <li class="header__price-list-item">
+                                    <a class="header__price-list-item-link" href="#">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <span>USD</span>    
+                                    </a>
+                                </li>
+                                <li class="header__price-list-item">
+                                    <a class="header__price-list-item-link" href="#">
+                                        <i class="fa-solid fa-sterling-sign"></i>
+                                        <span>GBP</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__nav-right l-4 m-0 c-0">
+                    <ul class="header__right-list">
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-solid fa-user"></i>
+                               <span>Tài khoản</span> 
+                            </a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-regular fa-heart"></i>
+                                Danh sách yêu thích</a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-regular fa-circle-check"></i>
+                                Thủ tục thanh toán</a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#">
+                                <i class="fa-solid fa-unlock"></i>
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="strikethrough"></div>
+            <div class="header__search row">
+                <div class="header__search-logo col l-3 m-9 c-9">
+                    <a href="#" class="header__search-logo-link">
+                        <img src="./assets/img/header/logo/logo.png" alt="" class="header__search-logo-img">
+                    </a>
+                </div>
+                <div class="header__search-search col l-6 m-0 c-0">
+                    <form class="header__search-search-form" action="">
+                        <input class="header__search-search-input" type="text" placeholder="Nhập tên sản phẩm" id="search">
+                        <label class="header__search-search-icon" for="search">
+                            <a class="header__search-search-icon-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </label>
+                    </form>
+                </div>
+                <div class="header__search-tell col l-2 m-0 c-0">
+                    <a class="header__search-tell-link" href="tel:(+84)99998943">
+                        <img src="./assets/img/header/contact/phone.png" alt="" class="header__search-tell-img">
+                        <div class="header__search-tell-text">
+                            <h1>Gọi mua hàng</h1>
+                            <span>(+84).9999.8943</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__search-cart col l-1 m-3 c-3">
+                    <a class="header__search-cart-link" href="#">
+                        <img src="./assets/img/header/contact/cart.png" alt="" class="header__search-cart-img">   
+                        <div class="header__search-cart-text">
+                            <h1>Giỏ Hàng</h1>
+                            <span>0 sản phẩm</span>
+                        </div>
+                    </a>
+                    <div class="header__search-cart-list">
+                        <h1>Giỏ Hàng</h1>
+                        <span>Giỏ Hàng có 0 sản phẩm</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__search-mobile grid wide l-0">
+            <div class="header__search-mobile-container">
+                <a class="header__search-search-icon-link header__search-search-icon-link-mobile" href="#">
+                    <i class="header__search-search-icon-mobile fa-solid fa-magnifying-glass"></i>
+                    <form  class="header__search-search-form header__search-search-form-moible" action="">
+                        <input class="header__search-search-input" type="text" placeholder="Nhập tên sản phẩm" id="search">
+                        <label class="header__search-search-icon" for="search">
+                            <a class="header__search-search-icon-link" href="#"></a>
+                        </label>
+                    </form>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
