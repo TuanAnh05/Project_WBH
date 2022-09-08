@@ -501,10 +501,12 @@
 }
 
 .slide1__category-item-link span {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Saira", sans-serif;
   letter-spacing: 0.5px;
 }
-/* Verdana, Geneva, Tahoma, sans-serif */
+/* Verdana, Geneva, Tahoma, sans-serif
+
+ */
 
 .slide1__category-icon-load-more {
   float: right;

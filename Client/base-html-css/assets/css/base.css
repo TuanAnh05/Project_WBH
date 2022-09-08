@@ -7,7 +7,7 @@
   --hover-color: #e34444;
   --primary-color: #33cccc;
   --primary-hover: rgba(141, 238, 238, 0.2);
-  --primary-font: "Times New Roman", Times, serif;
+  --primary-font: "Saira", sans-serif;
   /* "IBM Plex Sans Hebrew", sans-serif */
 }
 
@@ -29,9 +29,9 @@ html {
   /* hack, mac dinh = 16px */
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Saira", sans-serif;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Saira", sans-serif;
   scroll-behavior: smooth;
 }
 
