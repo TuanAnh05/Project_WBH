@@ -18,18 +18,35 @@ public class userControllers {
     public RepoUser repoUser;
 
     @PostMapping(value = "/login")
-    public Boolean Login(@RequestParam(value = "username", defaultValue = "")String username,
-        @RequestParam(value = "password", defaultValue = "") String password){
+//     public Boolean Login(@RequestParam(value = "username", defaultValue = "")String username,
+//         @RequestParam(value = "password", defaultValue = "") String password){
 
 
-        if(username == ""|| password == ""){
-            return false;
+//         if(username == ""|| password == ""){
+//             return false;
+//         }
+//         else{
+//             User us = repoUser.Login(username, password);
+//             System.out.println(us.getFullname());
+//             System.out.println(us.getUsername());
+//         }
+//         return true;
+//     }
+    public ResponseEntity<?> LoginController(@RequestParam(value = "username",defaultValue = "")String username,
+    @RequestParam(value = "password", defaultValue = "") String password){
+        if( username.equals("") || password.equals("")){
+            return ResponseEntity.ok(new resLogin ("Nhập đầy đủ tài khoản và mật khẩu",false));
+        }else{
+            try{
+                List<User> us = repoUser.Login(username, password);
+                if(us.size()==1){
+                    return ResponseEntity.ok(new resLogin("Thành công",true));
+                }else{
+                    return ResponseEntity.ok(new resLogin("Tài khoản mật khẩu không chính xác", false));
+                }
+            }catch(Exception e){
+                return ResponseEntity.ok(new resLogin("Tài khoản mật khẩu không chính xác", false));
+            }
         }
-        else{
-            User us = repoUser.Login(username, password);
-            System.out.println(us.getFullname());
-            System.out.println(us.getUsername());
-        }
-        return true;
     }
 }
