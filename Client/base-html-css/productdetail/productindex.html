@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo2.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500&family=Josefin+Sans:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Shop-Do-Cong-Nghe</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header grid wide">
+            <div class="header__nav row">
+                <div class="header__nav-left l-8 m-9 c-8">
+                    <ul class="header__left-list">
+                        <li class="header__left-item header__nav-language">
+                            <img src="" alt="" class="header__nav-language-img">
+                            <img src="./assets/img/header/language/vietnam.jpg" class="header__nav-language-img" alt="">
+                            <a class="header__left-item-link" href="#">Việt Nam
+                                <!--<i class="header__icon-dow fa-solid fa-chevron-down"></i> -->
+                                <ul class="header__language-list">
+                                    <li class="header__language-list-item">
+                                        <a class="header__language-list-item-link" href="#">
+                                            <img src="./assets/img/header/language/en.jpg" class="header__language-list-item-img" alt="">
+                                            <span>English</span>    
+                                        </a>
+                                    </li>
+                                    <li class="header__language-list-item">
+                                        <a class="header__language-list-item-link" href="#">
+                                            <img src="./assets/img/header/language/it.jpg" class="header__language-list-item-img" alt="">
+                                            <span>Italia</span> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                            
+                        </li>
+                        <li class="header__left-item header__nav-price">
+                            <i class="fa-solid fa-star"></i>
+                            <a class="header__left-item-link" href="#">VND
+                            <i class="header__icon-dow fa-solid fa-chevron-down"></i>
+                            <ul class="header__price-list">
+                                <li class="header__price-list-item">
+                                    <a class="header__price-list-item-link" href="#">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <span>USD</span>    
+                                    </a>
+                                </li>
+                                <li class="header__price-list-item">
+                                    <a class="header__price-list-item-link" href="#">
+                                        <i class="fa-solid fa-sterling-sign"></i>
+                                        <span>GBP</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__nav-right l-4 m-0 c-0">
+                    <ul class="header__right-list">
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-solid fa-user"></i>
+                               <span>Tài khoản</span> 
+                            </a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-regular fa-heart"></i>
+                                Danh sách yêu thích</a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-regular fa-circle-check"></i>
+                                Thủ tục thanh toán</a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#">
+                                <i class="fa-solid fa-unlock"></i>
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="strikethrough"></div>
+            <div class="header__search row">
+                <div class="header__search-logo col l-3 m-9 c-9" style="width: 332px;height: 51.188;">
+                    <a href="#" class="header__search-logo-link">
+                        <img src="./assets/img/header/logo/logo.png" alt="" class="header__search-logo-img">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="header__search-mobile grid wide l-0">
+            <div class="header__search-mobile-container">
+                <a class="header__search-search-icon-link header__search-search-icon-link-mobile" href="#">
+                    <i class="header__search-search-icon-mobile fa-solid fa-magnifying-glass"></i>
+                    <form  class="header__search-search-form header__search-search-form-moible" action="">
+                        <input class="header__search-search-input" type="text" placeholder="Nhập tên sản phẩm" id="search">
+                        <label class="header__search-search-icon" for="search">
+                            <a class="header__search-search-icon-link" href="#"></a>
+                        </label>
+                    </form>
+                </a>
+            </div>
+            
+        </div>
+        <div class="roll">
+            <a href="#" class="back-home">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+            <div class="slide1__content-sidebar col l-12 m-0 c-0">
+                <ul class="slide1__content-sidebar-list">
+                    <li class="slide1__content-sidebar-item">
+                        <a class="slide1__content-sidebar-item-link slide1__content-sidebar-item-link--current" href="#">
+                            <i class="slide1__content-sidebar-item-icon fa-solid fa-earth-africa"></i>
+                            <span>TRANG CHỦ</span>
+                        </a> 
+                        
+                    </li>
+                    <li class="slide1__content-sidebar-item">
+                        <a class="slide1__content-sidebar-item-link" href="#">
+                            <i class="slide1__content-sidebar-item-icon fa-solid fa-bag-shopping"></i>
+                            <span>SẢN PHẨM</span>
+                        </a> 
+                        <div class="slide1__sidebar-shop-pages-list row">
+                            <div class="slide1__sidebar-shop-page-item col l-3">
+                                <h3 class="slide1__sidebar-shop-page-header">
+                                    <span>LAPTOP, TABLET, MOBILE</span>
+                                </h3>
+                                <ul class="slide1__sidebar-shop-page-list-sub">
+                                    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                           <!-- <img src="./assets/img/container/slide1/icon category/living room.png" alt="" class="slide1__sidebar-shop-page-icon"> -->
+                                            <span>Điện Thoại Iphone</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                           <!-- <img src="./assets/img/container/slide1/icon category/Bed room.png" alt="" class="slide1__sidebar-shop-page-icon"> -->
+                                            <span>Macbook</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <!-- <img src="./assets/img/container/slide1/icon category/bath room.png" alt="" class="slide1__sidebar-shop-page-icon"> -->
+                                            <span>Máy tính bảng Samsung Galaxy</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                           <!-- <img src="./assets/img/container/slide1/icon category/kitchen.png" alt="" class="slide1__sidebar-shop-page-icon"> -->
+                                            <span>Laptop Dell</span> 
+                                        </a>
+                                    </li>
+
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                           <!-- <img src="./assets/img/container/slide1/icon category/accessiries.png" alt="" class="slide1__sidebar-shop-page-icon"> -->
+                                            <span>Máy tính bảng Apple Ipad</span> 
+                                        </a>
+                                    </li>
+    
+                                </ul>
+
+                            </div>
+                            
+                            <div class="slide1__sidebar-shop-page-item col l-3">
+                                <h3 class="slide1__sidebar-shop-page-header">
+                                    <span>PHỤ KIỆN LAPTOP, PC, MOBILE</span>
+                                </h3>
+                                <ul class="slide1__sidebar-shop-page-list-sub">
+                                    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Balo, cặp, túi chống sốc</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Đế tản nhiệt Laptop</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>RAM laptop</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Bàn Phím Máy Tính Bảng</span> 
+                                        </a>
+                                    </li>
+
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Pin Dự Phòng</span> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                            <div class="slide1__sidebar-shop-page-item col l-3">
+                                <h3 class="slide1__sidebar-shop-page-header">
+                                    <span>PHÍM CHUỘT, GHẾ GAME, GEAR</span>
+                                </h3>
+                                <ul class="slide1__sidebar-shop-page-list-sub">
+                                    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Bàn Phím Máy Tính</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Tai nghe gaming</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Ghế Chơi Game Giả Lập</span> 
+                                        </a>
+                                    </li>
+    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Bàn gaming giá rẻ</span> 
+                                        </a>
+                                    </li>
+
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Bàn Phím Chuột Không Dây</span> 
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="slide1__sidebar-shop-page-list-sub-item">
+                                        <a href="#" class="slide1__sidebar-shop-page-link">
+                                            <span>Chuột máy tính</span> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="slide1__content-sidebar-item">
+                        <a class="slide1__content-sidebar-item-link" href="#">
+                            <i class="slide1__content-sidebar-item-icon fa-solid fa-mug-hot"></i>
+                            <span>TUYỂN DỤNG</span>
+                        </a> 
+                    </li>
+                    <li class="slide1__content-sidebar-item">
+                        <a class="slide1__content-sidebar-item-link" href="#">
+                            <i class="slide1__content-sidebar-item-icon fa-solid fa-earth-africa"></i>
+                            <span>LIÊN LẠC</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container grid wide">
+            <div role="main" class="container" >
+                <div class="product-briefing flex card _2qM0Iy">
+                    <div class="jexb7x">
+                        <div class="flex flex-column">
+                            <div class="_1KdnTb">
+                                <div class="_2fbO7Q">
+                                    <div class="_1OPdfl">
+                                        <div class="_3uzKon _2PWsS4" style=" background-size: contain; background-repeat: no-repeat; position: relative;">
+                                            <img class="anh1" src="./assets/img/container/slide2/sp2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="flex flex-auto eTjGTe">
+                        <div class="flex-auto flex-column  _1Kkkb-" >
+                            <div class="_2rQP1z">
+                                <span>
+                                    Surface Laptop Go (THJ-00035) (i5 1035G1/8GB RAM/256GB SSD/12.4 Cảm ứng/Win 10/Vàng)
+                                </span>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <div class="flex flex-column">
+                                    <div class="flex flex-column _38g6so">
+                                        <div class="flex items-center">
+                                            <div class="flex items-center _34BHKe">
+                                                <div class="_2yjfFH"> 27.269.000₫ </div>
+                                                <div class="_2Shl1j">21.799.000₫</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_3rFQYx">
+                                <div class="flex flex-column">
+                                    <div class="flex VrhRS0 _1RCFQu">
+                                        <div flex items-center _283ldj>
+                                            <h3>Thông số sản phẩm: </h3>
+                                            <span> CPU: Intel Core i5 1035G1
+                                                RAM: 8GB
+                                                Ổ cứng: 256GB SSD
+                                                VGA: Onboard
+                                                Màn hình: 12.4 inch cảm ứng
+                                                HĐH: Win 10
+                                                Màu: Vàng</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column">
+                                    <div class="flex VrhRS0 _1RCFQu" style="margin-top: 26px; ">
+                                        <div flex flex-column>
+                                            <div flex items-center _283ldj>
+                                                <div class="_34CHXV">Số lượng: </div>
+                                                <div class="flex items-center" style="margin-top: 10px; ">
+                                                    <div style="margin-right: 15px;">
+                                                        <div class="_1RTqoK shopee-input-quantity">
+                                                            <button class="_1MGNbJ">
+                                                            </button>
+                                                            <input class="_1MGNbJ _1eS5m1" type="text" role="spinbutton">
+                                                            <button class="_1MGNbJ"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div> 141 sản phẩm có sẵn</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px;">
+                                <div class="_3pcTIL">
+                                    <div class="_37uIr4">
+                                        <button type="button" class="btn btn-tinted btn--l _3f7_YI _1TpzVc" aria-disabled="false" style="margin-right: 40px;">
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </button>
+                                        <button type="button" class="btn btn-solid-primary btn--l _3f7_YI" aria-disabled="false">Mua ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-product__content"> 
+                    <div class="product-detail page-product__detail" style="width: 1180px;height: 1000px;">
+                        <div class="_3ICPhk">
+                            <div class="_2N2_VN">MÔ TẢ SẢN PHẨM</div>
+                            <div class="_2jz573">
+                                <div class="_1MqcWX">
+                                    <p class="_2jrvqA"> Thiết kế Surface Laptop Go
+-Surface Laptop Go được thiết kế với vỏ nhôm. Tuy nhiên, vì là mẫu laptop hướng đến phân khúc tầm trung nên Laptop Go chỉ có lớp vỏ trên (chứa mặt màn hình) được làm bằng nhôm, còn lại ở phần dưới (chứa bàn phím và các linh kiện) là được làm bằng nhựa tổng hợp polycarbonate, sợi thủy tinh và 30% hàm lượng chất tái chế nhằm bảo vệ môi trường.Với thiết kế nhỏ gọn, trọng lượng của nó chỉ nặng 1,1kg và chỉ dày 15.69mm. Điều này khiến nó trở thành chiếc laptop Surface nhẹ và mỏng nhất của Microsoft, nhẹ hơn cả MacBook Air của Apple.Với trọng lượng nhỏ gọn này, bạn có thể mang theo Laptop Go trong những chuyến công tác xa hoặc mang đi bất cứ đâu mà không sợ bị quá nặng hoặc cồng kềnh. Surface Laptop Go có bàn di chuột lớn, được trang bị đầy đủ bàn phím với hành trình phím 1,3 mm cho trải nghiệm gõ chính xác và thoải mái.  Ở dòng sản phẩm mới này, người dùng có thể tùy chọn màu sắc với 3 phiên bản màu: Blue, Sandstone và Platinum.Về cổng kết nối, Surface Laptop Go được trang bị 1 cổng USB Type C, 1 cổng USB A, giắc cắm tai nghe 3.5 mm và cổng kết nối Surface Connect độc quyền.
+
+-Màn hình:  Surface Laptop Go có màn hình 12,4 inch với độ phân giải 1536×1024 và cho mật độ điểm ảnh là 148 PPI. Với độ phân giải này, Surface Laptop Go có tỉ lệ khung hình 3:2. Tương tự các dòng Surface khác, Surface Laptop Go cũng có màn hình cảm ứng 10 điểm và hỗ trợ bút Surface Pen.
+
+-Cấu hình: Điều đặc biệt ở đây, mặc dù sở hữu mức giá không quá cao, Surface Laptop Go vẫn được Microsoft trang bị con chip Intel Core i thế hệ 10. Ở phiên bản tiêu chuẩn, Surface Laptop Go có RAM 4GB và eMMC 64GB. Bên cạnh đó, người dùng có thể lựa chọn phiên bản cao cấp hơn có tùy chọn RAM 8GB hoặc phiên bản RAM 16GB với bộ nhớ trong SSD 128 GB/ 256 GB. Với đa dạng các cấu hình khác nhau, Surface Laptop Go hoàn toàn có thể phục vụ tốt các nhu cầu học tập, giải trí và làm việc văn phòng của nhiều khách hàng.
+
+-Ngoài ra, Surface Laptop Go có cảm biến vân tay được tích hợp ngày ở nút nguồn cho phép mở khóa thiết bị một cách nhanh chóng. Tuy nhiên, bạn cần lưu ý rằng tính năng này sẽ chỉ được trang bị ở các phiên bản 8GB RAM và 16GB RAM. 
+
+-Surface Laptop Go còn hỗ trợ Wifi 6 – thế hệ mạng mới nhất. Đem đến tốc độ truyền dữ liệu nhanh và hiệu suất vượt trội hơn hẳn so với các thế hệ wifi trước.
+
+-Thời lượng pin: Theo như nhà sản xuất Microsoft công bố, thời lượng pin của Surface Laptop Go có thể lên đến 13 giờ sử dụng. Đặc biệt, sản phẩm này còn có tính năng sạc nhanh giúp sạc 80% pin chỉ trong một giờ. Với thời lượng pin này, bạn có thể thoải mái làm việc, học tập, giải trí cả một ngày dài.
+
+-Camera: Không như điện thoại, camera được trang bị trên laptop thường chỉ được sử dụng để phục vụ cho công việc, học tập cơ bản như chụp ảnh scan tài liệu, hay video call, hoặc trực tuyến. Dù vậy, Surface Laptop Go vẫn được tích hợp camera với độ phân giải lên đến 720p, khẩu độ f2.0, hoàn toàn đủ để người dùng có thể thoải mái làm việc, học tập. 
+
+- Kết luận: Với một chiếc laptop xách tay nhỏ gọn, nhưng vẫn được trang bị bộ xử lý Intel Core thế hệ 10, Surface Laptop Go xứng đáng là chiếc laptop đáng mua trong năm nay dành cho những người đang có nhu cầu tìm mua một chiếc laptop có giá thành phải chăng nhưng hiệu năng vẫn đủ mạnh mẽ đáp ứng nhu cầu làm việc và học tập.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+                
+                    
+                <div class="slide4___footer row">
+                
+                </div>
+            </div>
+        <div class="footer__tag">
+            <div class="footer__tag-container grid wide">
+                <p>PHỤ KIỆN LAPTOP, PC, MOBILE: 
+                    <a href="#">Dây Cáp Các Loại</a> <span>/</span>
+                    <!--<a href="#">Thiết bị chuyển đổi</a> <span>/</span>-->
+                    <a href="#">Bộ chia tín hiệu</a> <span>/</span>
+                    <!--<a href="#">Phụ Kiện Điện Thoại, Máy Tính Bảng</a> <span>/</span>-->
+                    <a href="#">Linh Kiện Laptop</a> <span>/</span>
+                    <a href="#">Phụ Kiện Laptop</a> <span>/</span>
+                    <a href="#">Phụ Kiện Gaming</a> <span>/</span>
+                    <a href="#">Phụ kiện khác</a> <span>/</span>
+                    <a href="#">Phụ kiện HDD</a> <span>/</span>
+                    <a href="#">Phụ Kiện Tai Nghe</a> <span>/</span>
+                    <a href="#">Phụ Kiện Màn Hình</a> <span>/</span>
+                    <!--<a href="#">Laptop, Máy Tính Xách Tay</a> <span>/</span> -->
+                    <a href="#">Điện Thoại, Máy Tính Bảng</a>
+                </p>
+                <p>PC VĂN PHÒNG, AIO, MINI PC:
+                    <a href="#">Máy Tính Để Bàn Dell</a> <span>/</span>
+                    <a href="#">Máy Tính Để Bàn HP</a> <span>/</span>
+                    <a href="#">Máy Tính Để Bàn Asus</a> <span>/</span>
+                    <a href="#">Máy Tính Để Bàn Lenovo</a> <span>/</span>
+                    <a href="#">Máy Tính Để Bàn Acer</a> <span>/</span>
+                    <a href="#">Máy Tính All in One</a> <span>/</span>
+                    <a href="#">Máy Tính Apple iMac</a> <span>/</span>
+                    <a href="#">Máy Tính Để Bàn Fujitsu</a>
+                </p>
+                <p>LINH KIỆN MÁY TÍNH:
+                    <a href="#">CPU - Bộ vi xử lý</a> <span>/</span>
+                    <a href="#">RAM - Bộ nhớ trong</a> <span>/</span>
+                    <a href="#">Ổ cứng HDD</a> <span>/</span>
+                    <a href="#">Ổ cứng SSD</a> <span>/</span>
+                    <a href="#">ODD - Ổ đĩa quang</a> <span>/</span>
+                    <a href="#">VGA - Card Màn Hình</a> <span>/</span>
+                    <a href="#">Case - Vỏ máy tính</a> <span>/</span>
+                    <a href="#">Mainboard - Bo mạch chủ</a>
+                </p>
+                <p>MÁY CHƠI GAME, TAY GAME:
+                    <a href="#">Tay Cầm Chơi Game</a> <span>/</span>
+                    <a href="#">Máy chơi Game PS4</a> <span>/</span>
+                    <a href="#">Đĩa Game PS4</a> <span>/</span>
+                    <a href="#">Phụ kiện PS4</a> <span>/</span>
+                    <a href="#">Máy Chơi Game PS5</a> <span>/</span>
+                    <a href="#">Vô Lăng Chơi Game</a> <span>/</span>
+                    <a href="#">Cần số chơi game</a> <span>/</span>
+                    <a href="#">Kính Chơi Game</a> <span>/</span>
+                    <a href="#">Phụ Kiện PS5</a> <span>/</span>
+                    <a href="#">Đĩa Game PS5</a>
+                </p>
+                <p>HỌP, GIẢNG DẠY, STREAM:
+                    <a href="#">Thiết bị trợ giảng</a> <span>/</span>
+                    <a href="#"> Bút trình chiếu</a> <span>/</span>
+                    <a href="#">Máy chiếu giáo dục</a> <span>/</span>
+                    <a href="#">Thiết bị hội nghị</a> <span>/</span>
+                    <a href="#">Thiết Bị Studio, Stream</a> <span>/</span>
+                    <a href="#">Webcam</a>
+                </p>
+                <p>THIẾT BỊ MẠNG, PHẦN MỀM:
+                    <a href="#">Bộ Phát Wifi</a> <span>/</span>
+                    <a href="#">Bộ Kích Sóng Wifi</a> <span>/</span>
+                    <a href="#">Card Mạng</a> <span>/</span>
+                    <a href="#">Bộ Phát Wifi 3G/4G</a> <span>/</span>
+                    <a href="#">Bộ Mesh Wifi</a> <span>/</span>
+                    <a href="#">Modem</a> <span>/</span>
+                    <a href="#">Giải Pháp Mạng</a> <span>/</span>
+                    <a href="#">Thiết Bị Firewall, Cân Bằng Tải</a> <span>/</span>
+                    <a href="#">Phụ Kiện Mạng</a> <span>/</span>
+                    <a href="#">Phần Mềm, Hệ Điều Hành</a>
+                </p>
+                <p>PC ĐỒ HỌA, RENDER, MÁY CHỦ:
+                    <a href="#">PC Đồ Họa, Render HACOM</a> <span>/</span>
+                    <a href="#">Máy Chủ HACOM</a> <span>/</span>
+                    <a href="#">Máy Trạm Hãng</a> <span>/</span>
+                    <a href="#">Máy Chủ Hãng</a> <span>/</span>
+                    <a href="#">Linh kiện Máy Trạm</a> <span>/</span>
+                    <a href="#">Màn hình Workstations</a> <span>/</span>
+                    <a href="#">VGA Workstations</a> <span>/</span>
+                    <a href="#">Tản nhiệt Workstations</a>
+                </p>
+            </div>
+        </div>
+        <footer class="footer grid wide">
+            <div class="copyright">
+                <p>© 2022 <span>Market Online</span>. Wordpress Themes by <span>Snstheme</span> (clone by <a href="file:///C:/Users/MANH/Desktop/Funiture/Funiture/index.html?#"> @By Nhóm </a>)</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
