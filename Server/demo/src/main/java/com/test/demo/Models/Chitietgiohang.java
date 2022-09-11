@@ -38,6 +38,7 @@ public class Chitietgiohang {
         this.tongthanhtoan=tongthanhtoan;
         this.ngaytao=ngaytao;
     }
+    
     public double getDongia() {
         return dongia;
     }
@@ -61,6 +62,12 @@ public class Chitietgiohang {
     }
     public void setNgaytao(Date ngaytao) {
         this.ngaytao = ngaytao;
+    }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
     }
     
 }

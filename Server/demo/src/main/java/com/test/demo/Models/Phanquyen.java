@@ -23,10 +23,20 @@ public class Phanquyen {
     public Phanquyen(){
         super();
     }
+    
+
     public Phanquyen(String ten, String mota){
         this.ten=ten;
         this.mota=mota;
     }
+    public Long getId() {
+        return id;
+    }
+    
+    public void setId(Long id) {
+        this.id = id;
+    }
+    
     public String getTen() {
         return ten;
     }

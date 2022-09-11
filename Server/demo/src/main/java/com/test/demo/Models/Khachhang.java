@@ -30,6 +30,14 @@ public class Khachhang {
     @Column(name = "taikhoan")
     private String taikhoan;
     
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Column(name = "matkhau")
     private String matkhau;
     
@@ -134,7 +142,7 @@ public class Khachhang {
         this.anhdaidien = anhdaidien;
     }
 
-    public boolean isTrangthai() {
+    public boolean getTrangthai() {
         return trangthai;
     }
 

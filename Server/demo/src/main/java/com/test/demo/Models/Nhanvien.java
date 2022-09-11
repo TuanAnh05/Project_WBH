@@ -64,6 +64,12 @@ public class Nhanvien {
         this.Token=Token;
         this.ngaytao=ngaytao;
     }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
     public String getHoten() {
         return hoten;
     }
@@ -100,7 +106,7 @@ public class Nhanvien {
     public void setMatkhau(String matkhau) {
         this.matkhau = matkhau;
     }
-    public boolean isTrangthai() {
+    public boolean getTrangthai() {
         return trangthai;
     }
     public void setTrangthai(boolean trangthai) {

@@ -93,7 +93,7 @@ public class Sanpham {
     public void setGiaKM(double giaKM) {
         GiaKM = giaKM;
     }
-    public boolean isTinhTrang() {
+    public boolean getTinhTrang() {
         return tinhTrang;
     }
     public void setTinhTrang(boolean tinhTrang) {

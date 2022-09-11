@@ -51,6 +51,12 @@ public class Donhang {
     public double getTienGiam() {
         return TienGiam;
     }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
     public void setTienGiam(double tienGiam) {
         TienGiam = tienGiam;
     }
