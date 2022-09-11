@@ -51,6 +51,12 @@ public class Sanpham {
         this.tinhTrang=tinhTrang;
         this.AnhMinhHoa=AnhMinhHoa;
     }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
     public String getTenSp() {
         return tenSp;
     }
