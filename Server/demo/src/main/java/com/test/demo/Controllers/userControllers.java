@@ -29,7 +29,6 @@ public class userControllers {
             User us = repoUser.Login(username, password);
             System.out.println(us.getFullname());
             System.out.println(us.getUsername());
-            System.out.println(us.getPassword());
         }
         return true;
     }
