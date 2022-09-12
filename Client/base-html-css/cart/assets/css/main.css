@@ -2141,3 +2141,13 @@ div {
 .kcsswk {
   width: 100%;
 }
+._4cUwRX {
+  margin-left: 0.9375rem;
+  border-left: 0.2rem solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 30px;
+  line-height: 4rem;
+  padding-left: 0.9375rem;
+  margin-bottom: 0.0625rem;
+  text-transform: capitalize;
+}
