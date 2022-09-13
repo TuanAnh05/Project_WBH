@@ -36,7 +36,7 @@ const Login = () => {
                             ></input>
                         </div>
                         <div className="suport_cl">
-                            <a href="" className="sign_in">Đăng kí</a>
+                            <a href="" className="sign_in">Đăng ký</a>
                             <a href="" className="forget">Quên mật khẩu?</a>
                         </div>
                         </form>

@@ -45,7 +45,7 @@ const Signin = () => {
                         <div className="inputBox">
                             <input 
                             type="submit"
-                            value="Đăng kí" 
+                            value="Đăng ký" 
                             ></input>
                         </div>
                         <div className="suport_cl">
