@@ -31,7 +31,7 @@
 .from_login .Container{
     position: relative;
     width: 400px;
-    height: 580px;
+    height: 530px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     display: flex;
@@ -63,9 +63,9 @@
 .form h2::before{
     content: '';
     position: absolute;
-    left: 75px;
+    left: 70px;
     bottom: -10px;
-    width: 185px;
+    width: 175px;
     height: 4px;
     background-color: #FFF;
     border-radius: 5px;
@@ -112,7 +112,7 @@
     max-width: 150px;
     cursor: pointer;
 }
-.form .inputBox:nth-child(5){
+.form .inputBox:nth-child(4){
     display: flex;
     justify-content: center;
     align-items: center;

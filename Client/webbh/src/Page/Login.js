@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Style/login.css";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const navi = useNavigate();
@@ -36,8 +36,12 @@ const Login = () => {
                             ></input>
                         </div>
                         <div className="suport_cl">
-                            <a href="" className="sign_in">Đăng ký</a>
-                            <a href="" className="forget">Quên mật khẩu?</a>
+                            <Link to = {"/signin"} className="sign_in">
+                                Đăng ký
+                            </Link>
+                            <Link to={""} className="forget">
+                                Quên mật khẩu?
+                            </Link>
                         </div>
                         </form>
                     <div className="or">

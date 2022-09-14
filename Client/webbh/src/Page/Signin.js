@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Style/signin.css";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signin = () => {
     const navi = useNavigate();
@@ -33,12 +33,6 @@ const Signin = () => {
                         <div className="inputBox">
                             <input 
                             type="text" 
-                            placeholder="Số điện thoại"
-                            ></input>
-                        </div>
-                        <div className="inputBox">
-                            <input 
-                            type="text" 
                             placeholder="E-mail"
                             ></input>
                         </div>
@@ -49,8 +43,11 @@ const Signin = () => {
                             ></input>
                         </div>
                         <div className="suport_cl">
-                            <a href="" className="sign_in">Đăng nhập</a>
-                            <a href="" className="forget">Quên mật khẩu?</a>
+                            <Link to={"/"} className="sign_in">
+                                Đăng nhập
+                            </Link>
+                            <Link to={""} className="forget">Quên mật khẩu?
+                            </Link>
                         </div>
                         </form>
                     <div className="or">
