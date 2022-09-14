@@ -1,7 +1,9 @@
 import React from 'react';
 import "../Style/login.css";
 import { Link, useNavigate } from 'react-router-dom';
+import styles from "../App.css";
 
+const cs = className.bi
 const Login = () => {
     const navi = useNavigate();
   return (

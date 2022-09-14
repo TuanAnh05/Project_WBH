@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../Style/signin.css";
 import { Link, useNavigate } from 'react-router-dom';
+import axios from "axios";
 
 const Signin = () => {
     const navi = useNavigate();
+    const [register, setRegister] = useState({
+        username : "",
+        password: "",
+        fullname: "",
+    });
+
+    const {username,password,fullname} = register;
+
+    const onChangeValue = (e) => {
+        setRegister({...register, [e.target.name] : e.target.value});
+    };
+    // http://localhost:8080/api/demo/register
+    useEffect(() =>{
+        async function registerUser(){
+            const result = axios.post(
+                "http://localhost:8080/api/demo/register",
+                register
+            );
+            if(result.data.length() > 0 ){
+
+            }
+        }
+    },[])
+
+    console.log(register);
   return (
     <div className="from_login">
         <div className="color"></div>
@@ -21,19 +47,28 @@ const Signin = () => {
                         <div className="inputBox">
                             <input 
                             type="text" 
+                            placeholder="E-mail"
+                            value={fullname}
+                            name = "fullname"
+                            onChange={onChangeValue}
+                            ></input>
+                        </div>
+                        <div className="inputBox">
+                            <input 
+                            type="text" 
                             placeholder="Tài khoản"
+                            value={username}
+                            name = "username"
+                            onChange={onChangeValue}
                             ></input>
                         </div>
                         <div className="inputBox">
                             <input 
                             type="text" 
                             placeholder="Mật khẩu"
-                            ></input>
-                        </div>
-                        <div className="inputBox">
-                            <input 
-                            type="text" 
-                            placeholder="E-mail"
+                            name = "password"
+                            value={password}
+                            onChange={onChangeValue}
                             ></input>
                         </div>
                         <div className="inputBox">

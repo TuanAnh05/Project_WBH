@@ -23,26 +23,7 @@ public class Login {
     @Autowired
     public RepoUser repoUser;
 
-    // @GetMapping(value = "/login")
-    // public boolean Login(@RequestBody User userReq){
-
-    // String username = userReq.getUsername();
-    // String password = userReq.getPassword();
-    // Optional<User> user=repoUser.findByUsername(username);
-    // if(user.isEmpty()==false){
-    // Optional<User> user1=repoUser.findByPassword(password);
-    // if(user1.isEmpty()==false){
-    // return true;
-    // }else
-    // {
-    // return false;
-    // }
-    // }
-
-    // return false;
-    // }
-
-    @PostMapping(value = "/addUser")
+    @PostMapping(value = "/register")
     public List<User> postMethodName(@RequestBody User user) {
         if (!user.getFullname().isEmpty() && !user.getUsername().isEmpty() && !user.getPassword().isEmpty()) {
             User userNew = new User();
