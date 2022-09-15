@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.test.demo.Models.User;
+import com.test.demo.Payload.resLogin;
 import com.test.demo.Responsitory.RepoUser;
 
 @RestController
@@ -22,6 +24,24 @@ public class Login {
 
     @Autowired
     public RepoUser repoUser;
+
+    @PostMapping(value = "/login")
+    public ResponseEntity<?> LoginController(@RequestBody User user) {
+        if (user.getUsername().isEmpty() && user.getPassword().isEmpty()) {
+            return ResponseEntity.ok(new resLogin("Nhập đầy đủ tài khoản và mật khẩu", false));
+        } else {
+            try {
+                List<User> us = repoUser.Login(user.getUsername(), user.getPassword());
+                if (us.size() == 1) {
+                    return ResponseEntity.ok(new resLogin("Thành công", true));
+                } else {
+                    return ResponseEntity.ok(new resLogin("Tài khoản mật khẩu không chính xác", false));
+                }
+            } catch (Exception e) {
+                return ResponseEntity.ok(new resLogin("Tài khoản mật khẩu không chính xác", false));
+            }
+        }
+    }
 
     @PostMapping(value = "/register")
     public List<User> postMethodName(@RequestBody User user) {

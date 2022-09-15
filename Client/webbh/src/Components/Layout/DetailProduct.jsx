@@ -89,7 +89,7 @@ const ModalProduct = ({ visible, onClose, product }) => {
                         <Image
                             width={450}
                             src={
-                                products !== undefined
+                                products !== null
                                     ? `${products.anhMinhHoa}`
                                     : ""
                             }
@@ -102,7 +102,7 @@ const ModalProduct = ({ visible, onClose, product }) => {
                     <div className='itemRight'>
                         <div>
                             <h2 className='nameProduct'>
-                                {products !== undefined ? products.tenSp : ""}
+                                {products !== null ? products.tenSp : ""}
                             </h2>
                             <div
                                 className='reviewProduct'
@@ -110,7 +110,7 @@ const ModalProduct = ({ visible, onClose, product }) => {
                             >
                                 <div className='review-Damua'>
                                     Đã bán:
-                                    {products !== undefined
+                                    {products !== null
                                         ? products.sold
                                         : ""}
                                 </div>
@@ -122,14 +122,8 @@ const ModalProduct = ({ visible, onClose, product }) => {
                                     style={{ fontSize: 15 }}
                                 >
                                     ₫{" "}
-                                    {products !== undefined
-                                        ? products.giaGoc.toLocaleString(
-                                              "vi-VN",
-                                              {
-                                                  style: "currency",
-                                                  currency: "VND",
-                                              }
-                                          )
+                                    {products !== null
+                                        ? products.giaGoc
                                         : ""}
                                 </div>
                                 <div
@@ -137,18 +131,12 @@ const ModalProduct = ({ visible, onClose, product }) => {
                                     style={{ fontSize: 25 }}
                                 >
                                     ₫
-                                    {products !== undefined
-                                        ? products.giaKM.toLocaleString(
-                                              "vi-VN",
-                                              {
-                                                  style: "currency",
-                                                  currency: "VND",
-                                              }
-                                          )
+                                    {products !== null
+                                        ? products.giaKM
                                         : ""}
                                 </div>
                                 <div className='discount'>
-                                    {products !== undefined
+                                    {products !== null
                                         ? products.promotional
                                         : ""}
                                     % GIẢM
@@ -170,7 +158,7 @@ const ModalProduct = ({ visible, onClose, product }) => {
                                     type={"number"}
                                 /> */}
                                 <span className='avaliable-product'>
-                                    {products !== undefined
+                                    {products !== null
                                         ? `${products.soLuong}`
                                         : ""}{" "}
                                     sản phẩm có sẵn
@@ -218,7 +206,7 @@ const ModalProduct = ({ visible, onClose, product }) => {
                         </Descriptions>
                         <Descriptions>
                             <Descriptions.Item label='Số lượng còn lại: '>
-                                {products !== undefined
+                                {products !== null
                                     ? `${products.soLuong}`
                                     : ""}
                             </Descriptions.Item>
@@ -231,7 +219,7 @@ const ModalProduct = ({ visible, onClose, product }) => {
                     </div>
                     <div>
                         <h2 className='title-detail'>Mô tả sản phẩm</h2>
-                        {products !== undefined
+                        {products !== null
                             ? HTMLReactParser(`${products.moTa}`)
                             : ""}
                     </div>

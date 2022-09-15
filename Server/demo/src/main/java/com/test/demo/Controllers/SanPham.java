@@ -47,6 +47,17 @@ public class SanPham {
         }
     }
 
+    @GetMapping(value = "/ProductById/{id}")
+    public ResponseEntity<?> getProductWithId(@PathVariable Long id) {
+
+        Optional<Sanpham> listSanPham = sanphamRepo.findById(id);
+        if (listSanPham.isEmpty() == false) {
+            return ResponseEntity.ok(listSanPham);
+        } else {
+            return ResponseEntity.ok(listSanPham);
+        }
+    }
+
     @PostMapping(value = "/addProduct")
     public List<Sanpham> createNews(@RequestBody @Validated Sanpham sp) {
         Sanpham entity = new Sanpham();
